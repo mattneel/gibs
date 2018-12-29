@@ -20,7 +20,7 @@ defmodule Gibs.MixProject do
   def application do
     [
       mod: {Gibs.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :coherence]
     ]
   end
 
@@ -44,7 +44,7 @@ defmodule Gibs.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:coherence, github: "smpallen99/coherence"}
+      {:coherence, github: "appprova/coherence", branch: "upgrade-to-phoenix-1.4"}
     ]
   end
 
